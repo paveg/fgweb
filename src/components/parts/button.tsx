@@ -1,5 +1,5 @@
 
-type Props = {
+export type ButtonProps = {
   apperance: 'primary' | 'secondary' | 'error' | 'neutral'
   onClick?: () => void,
 }
@@ -9,7 +9,7 @@ const secondaryColor = 'border-yellow-500 bg-yellow-500 hover:bg-yellow-600 text
 const errorColor = 'border-red-500 bg-red-500 hover:bg-red-600 text-white'
 const neutralColor = 'border-gray-200 bg-gray-200 hover:bg-gray-300 text-black-900'
 
-export const Button: React.FC<Props> = ({ apperance, onClick, children }): JSX.Element => {
+export const Button: React.FC<ButtonProps> = ({ apperance, onClick, children }): JSX.Element => {
   let color: string
   switch (apperance) {
     case 'primary':
