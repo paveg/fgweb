@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button matches snapshot error 1`] = `
+<DocumentFragment>
+  <button
+    class="border-red-500 bg-red-500 hover:bg-red-600 text-white border rounded-md px-4 py-2 m-2 transition duration-500 ease select-none focus:outline-none focus:shadow-outline"
+    type="button"
+  >
+    Error
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button matches snapshot neutral 1`] = `
+<DocumentFragment>
+  <button
+    class="border-gray-200 bg-gray-200 hover:bg-gray-300 text-black-900 border rounded-md px-4 py-2 m-2 transition duration-500 ease select-none focus:outline-none focus:shadow-outline"
+    type="button"
+  >
+    Neutral
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button matches snapshot primary 1`] = `
+<DocumentFragment>
+  <button
+    class="border-green-500 bg-green-500 hover:bg-green-600 text-white border rounded-md px-4 py-2 m-2 transition duration-500 ease select-none focus:outline-none focus:shadow-outline"
+    type="button"
+  >
+    Primary
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button matches snapshot secondary 1`] = `
+<DocumentFragment>
+  <button
+    class="border-yellow-500 bg-yellow-500 hover:bg-yellow-600 text-white border rounded-md px-4 py-2 m-2 transition duration-500 ease select-none focus:outline-none focus:shadow-outline"
+    type="button"
+  >
+    Secondary
+  </button>
+</DocumentFragment>
+`;

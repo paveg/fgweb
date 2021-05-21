@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InlineLink matches snapshot 1`] = `
+<DocumentFragment>
+  <a
+    class="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+    href="/"
+  >
+    HOME
+  </a>
+</DocumentFragment>
+`;

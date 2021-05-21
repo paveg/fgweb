@@ -1,27 +1,12 @@
 import 'tailwindcss/tailwind.css'
-import Head from 'next/head'
-import { Header } from '../components/header';
 import React from 'react';
-import { Button } from '../components/button';
+import { Layout } from '../components/layout';
+import { InlineLink } from '../components/parts/inlineLink'
 
 export const Home: React.FC = (): JSX.Element => (
-  <>
-    <Header />
-    <div className="container mx-auto">
-      <Head>
-        <title>Funai Gaming Web</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <main>
-        <Button apperance="primary">Primary</Button>
-        <Button apperance="secondary">Secondary</Button>
-        <Button apperance="error" onClick={
-          () => { return window.alert('alert opened.') }
-          }>Alert</Button>
-      </main>
-      <footer />
-    </div>
-  </>
+  <Layout pageTitle="Home">
+    <InlineLink href={'/parts'}>Parts</InlineLink>
+  </Layout>
 )
 
 export default Home
