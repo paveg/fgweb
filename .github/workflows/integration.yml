@@ -1,0 +1,22 @@
+name: Integrations
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    name: node test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: npm clean install
+        run: npm ci
+      - name: eslint
+        run: npm run lint
+      - name: typecheck
+        run: npm run type-check
+      - name: jest
+        run: npm run test -- --ci
