@@ -1,4 +1,3 @@
-import 'tailwindcss/tailwind.css'
 import React from 'react';
 import { Layout } from '../components/layout';
 import { InlineLink } from '../components/parts/inlineLink'
