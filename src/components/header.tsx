@@ -1,6 +1,4 @@
-type Props = {}
-
-export const Header: React.FC<Props> = ():  JSX.Element => {
+export const Header: React.FC = ():  JSX.Element => {
     return (
         <nav className="flex items-center justify-between flex-wrap bg-gray-900 p-6">
             <div className="flex items-center flex-no-shrink text-white mr-6">
