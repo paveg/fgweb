@@ -1,9 +1,8 @@
 import 'tailwindcss/tailwind.css'
 import Head from 'next/head'
-import Image from 'next/image'
 import { Header } from '../components/header';
 
-export const Home = (): JSX.Element => (
+export const Home: React.FC = (): JSX.Element => (
   <>
     <Header />
     <div className="container mx-auto">
