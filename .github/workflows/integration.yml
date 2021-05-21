@@ -15,8 +15,8 @@ jobs:
       - name: npm clean install
         run: npm ci
       - name: eslint
-        run: npm lint
+        run: npm run lint
       - name: typecheck
-        run: npm type-check
+        run: npm run type-check
       - name: jest
-        run: npm test -- --ci
+        run: npm run test -- --ci
