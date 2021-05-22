@@ -19,4 +19,14 @@ describe('Button', () => {
     const { asFragment } = render(<Button apperance="error">Error</Button>, {})
     expect(asFragment()).toMatchSnapshot()
   })
+
+  it('matches snapshot small', () => {
+    const { asFragment } = render(<Button apperance="primary" small>Disabled</Button>, {})
+    expect(asFragment()).toMatchSnapshot()
+  })
+
+  it('matches snapshot disabled', () => {
+    const { asFragment } = render(<Button apperance="primary" disabled>Disabled</Button>, {})
+    expect(asFragment()).toMatchSnapshot()
+  })
 })

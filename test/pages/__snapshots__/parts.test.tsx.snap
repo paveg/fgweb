@@ -29,28 +29,41 @@ exports[`Parts page matches snapshot 1`] = `
           Buttons
         </h2>
         <button
-          class="border-green-500 bg-green-500 hover:bg-green-600 text-white border rounded-md px-4 py-2 m-2 transition duration-500 ease select-none focus:outline-none focus:shadow-outline"
+          class="border-green-500 bg-green-500 hover:bg-green-600 text-white px-6 py-3 text-sm disabled:opacity-60 m-1 border rounded-md transition duration-500 ease select-none focus:outline-none focus:shadow-outline"
           type="button"
         >
           Primary
         </button>
         <button
-          class="border-yellow-500 bg-yellow-500 hover:bg-yellow-600 text-white border rounded-md px-4 py-2 m-2 transition duration-500 ease select-none focus:outline-none focus:shadow-outline"
+          class="border-green-500 bg-green-500 hover:bg-green-600 text-white px-4 py-2 text-xs disabled:opacity-60 m-1 border rounded-md transition duration-500 ease select-none focus:outline-none focus:shadow-outline"
+          type="button"
+        >
+          Small Primary
+        </button>
+        <button
+          class="border-yellow-500 bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 text-sm disabled:opacity-60 m-1 border rounded-md transition duration-500 ease select-none focus:outline-none focus:shadow-outline"
           type="button"
         >
           Secondary
         </button>
         <button
-          class="border-gray-200 bg-gray-200 hover:bg-gray-300 text-black-900 border rounded-md px-4 py-2 m-2 transition duration-500 ease select-none focus:outline-none focus:shadow-outline"
+          class="border-gray-200 bg-gray-200 hover:bg-gray-300 text-black-900 px-6 py-3 text-sm disabled:opacity-60 m-1 border rounded-md transition duration-500 ease select-none focus:outline-none focus:shadow-outline"
           type="button"
         >
           Neutral
         </button>
         <button
-          class="border-red-500 bg-red-500 hover:bg-red-600 text-white border rounded-md px-4 py-2 m-2 transition duration-500 ease select-none focus:outline-none focus:shadow-outline"
+          class="border-red-500 bg-red-500 hover:bg-red-600 text-white px-6 py-3 text-sm disabled:opacity-60 m-1 border rounded-md transition duration-500 ease select-none focus:outline-none focus:shadow-outline"
           type="button"
         >
           Alert
+        </button>
+        <button
+          class="border-red-500 bg-red-500 hover:bg-red-600 text-white px-6 py-3 text-sm disabled:opacity-60 m-1 border rounded-md transition duration-500 ease select-none focus:outline-none focus:shadow-outline"
+          disabled=""
+          type="button"
+        >
+          Disabled
         </button>
       </div>
       <a

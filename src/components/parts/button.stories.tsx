@@ -12,4 +12,4 @@ const Template: Story<ButtonProps> = (args) => {
   return <Button {...args} >Button</Button>
 };
 
-export const Default = Template.bind({});
+export const TextButton = Template.bind({});
