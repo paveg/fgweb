@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Header } from './header';
 import React from 'react';
 import { Container } from './container'
+import { Footer } from './footer'
 
 type Props = {
   pageTitle: string
@@ -17,7 +18,7 @@ export const Layout: React.FC<Props> = ({ pageTitle, children }): JSX.Element =>
     <Container>
       <h1>{pageTitle}</h1>
       {children}
-      <footer />
     </Container>
+    <Footer />
   </>
 }
