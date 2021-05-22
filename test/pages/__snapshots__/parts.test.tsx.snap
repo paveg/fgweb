@@ -2,21 +2,41 @@
 
 exports[`Parts page matches snapshot 1`] = `
 <DocumentFragment>
-  <nav
-    class="flex items-center justify-between flex-wrap bg-gray-900 p-6"
+  <header
+    class="body-font bg-gray-900"
   >
     <div
-      class="flex items-center flex-no-shrink text-white mr-6"
+      class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
     >
-      <span
-        class="font-bold text-2xl tracking-wide"
+      <a
+        class="flex title-font font-medium items-center mb-4 md:mb-0"
       >
-        Funai Gaming Web
-      </span>
+        <span
+          class="text-xl text-white"
+        >
+          Funai Gaming
+        </span>
+      </a>
+      <nav
+        class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center text"
+      >
+        <a
+          class="mr-5 hover:text-white text-gray-300"
+          href="/"
+        >
+          Home
+        </a>
+        <a
+          class="mr-5 hover:text-white text-gray-300"
+          href="/parts"
+        >
+          Parts
+        </a>
+      </nav>
     </div>
-  </nav>
+  </header>
   <div
-    class="container mx-auto"
+    class="container mx-auto px-5 py-8 flex items-center sm:flex-row flex-col"
   >
     <main>
       <h1>
@@ -66,14 +86,89 @@ exports[`Parts page matches snapshot 1`] = `
           Disabled
         </button>
       </div>
-      <a
-        class="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
-        href="/"
-      >
-        Home
-      </a>
-      <footer />
     </main>
   </div>
+  <footer
+    class="text-gray-600 body-font"
+  >
+    <div
+      class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
+    >
+      <a
+        class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+        href="https://fg.vercel.app/"
+      >
+        <span
+          class="ml-3 text-xl sm:text-center"
+        >
+          Funai Gaming
+        </span>
+      </a>
+      <p
+        class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
+      >
+        © 2021 Funai —
+        <a
+          class="text-gray-600 ml-1"
+          href="https://twitter.com/paveg_"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          @paveg_
+        </a>
+      </p>
+      <span
+        class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+      >
+        <a
+          class="ml-3 text-gray-500"
+          href="https://twitter.com/paveg_"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <svg
+            class="w-5 h-5"
+            fill="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+            />
+          </svg>
+        </a>
+        <a
+          class="ml-3 text-gray-500"
+          href="https://www.instagram.com/_pavlog/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <svg
+            class="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <rect
+              height="20"
+              rx="5"
+              ry="5"
+              width="20"
+              x="2"
+              y="2"
+            />
+            <path
+              d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+            />
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
 </DocumentFragment>
 `;

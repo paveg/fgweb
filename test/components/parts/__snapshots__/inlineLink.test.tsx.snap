@@ -3,7 +3,7 @@
 exports[`InlineLink matches snapshot 1`] = `
 <DocumentFragment>
   <a
-    class="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+    class="underline text-blue-600 hover:text-blue-800 visited:text-purple-600 mx-12"
     href="/"
   >
     HOME

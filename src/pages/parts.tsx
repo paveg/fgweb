@@ -16,7 +16,6 @@ export const Parts: React.FC = (): JSX.Element => (
       }>Alert</Button>
       <Button apperance="error" disabled>Disabled</Button>
     </div>
-    <InlineLink href={'/'}>Home</InlineLink>
   </Layout>
 )
 
