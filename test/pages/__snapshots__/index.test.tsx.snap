@@ -18,13 +18,19 @@ exports[`Home page matches snapshot 1`] = `
         </span>
       </a>
       <nav
-        class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center text"
+        class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center"
       >
         <a
           class="mr-5 hover:text-white text-gray-300"
           href="/"
         >
           Home
+        </a>
+        <a
+          class="mr-5 hover:text-white text-gray-300"
+          href="/members"
+        >
+          Member
         </a>
         <a
           class="mr-5 hover:text-white text-gray-300"

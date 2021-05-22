@@ -1,6 +1,5 @@
 import React from 'react';
 import { Layout } from '../components/layout';
-import { InlineLink } from '../components/parts/inlineLink';
 import { Button } from '../components/parts/button';
 
 export const Parts: React.FC = (): JSX.Element => (
