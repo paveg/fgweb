@@ -1,11 +1,12 @@
 {
-  "name": "with-typescript-eslint-jest",
-  "author": "@erikdstock",
+  "name": "Funai Gaming Web",
+  "author": "Ryota Ikezawa",
   "license": "MIT",
   "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
     "type-check": "tsc --pretty --noEmit",
     "format": "prettier --write .",
