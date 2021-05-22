@@ -1,8 +1,7 @@
-type Props = {}
-
 type IconLinkProps = {
   href: string
 }
+
 const InstagramIconLink: React.VFC<IconLinkProps> = ({ href }): JSX.Element => {
   return <a className="ml-3 text-gray-500" href={href} rel="noopener noreferrer" target="_blank">
     <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
@@ -20,7 +19,7 @@ const TwitterIconLink: React.VFC<IconLinkProps> = ({ href }): JSX.Element => {
   </a>
 }
 
-export const Footer: React.FC<Props> = (): JSX.Element => {
+export const Footer: React.VFC = (): JSX.Element => {
   return <footer className="text-gray-600 body-font">
     <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
       <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900" href={'https://fg.vercel.app/'}>
