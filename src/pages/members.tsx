@@ -3,7 +3,7 @@ import { Layout } from '../components/layout';
 
 export const Parts: React.FC = (): JSX.Element => (
   <Layout pageTitle="Members" >
-    <div classNameName="w-full text-center mx-auto">
+    <div className="w-full text-center mx-auto">
       <table className="rounded-t-lg m-5 w-5/6 mx-auto bg-gray-900 text-gray-200">
         <tr className="text-left border-b border-gray-300">
           <th className="px-4 py-3">Firstname</th>
