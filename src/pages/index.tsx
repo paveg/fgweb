@@ -8,7 +8,7 @@ export const Home: React.FC = (): JSX.Element => {
     <Counter />
 
     <InlineLink href={'/parts'}>Parts</InlineLink>
-  </Layout >
+  </Layout>
 }
 
 export default Home
