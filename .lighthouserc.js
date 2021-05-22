@@ -1,19 +1,17 @@
 module.exports = {
   ci: {
     collect: {
-      staticDistDir: './out',
-      url: '/index.html',
+      numberOfRuns: 1,
+      staticDistDir: "./out",
+      url: [
+        "/"
+      ]
     },
-    upload: {
-      target: 'temporary-public-storage',
+    "assert": {
+      "preset": "lighthouse:no-pwa",
     },
-    assert: {
-      preset: 'lighthouse:no-pwa',
-      assertions: {
-        canonical: 'off',
-        'uses-http2': 'off',
-        'unused-javascript': ['error', { maxLength: 0 }],
-      },
-    },
-  },
-};
+    "upload": {
+      "target": "temporary-public-storage"
+    }
+  }
+}
