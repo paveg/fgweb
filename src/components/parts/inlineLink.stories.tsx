@@ -14,5 +14,6 @@ const Template: Story<InlineLinkProps> = (args) => {
 
 export const Default = Template.bind({});
 Default.args = {
-  href: '/'
+  href: '/',
+  target: '_blank',
 }
