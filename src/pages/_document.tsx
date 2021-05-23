@@ -10,6 +10,7 @@ class CustomDocument extends Document {
     return (
       <Html lang="ja">
         <Head>
+          <meta name="Description" content="This is a Funai Gaming website that mainly describes teams and activities." />
           <link rel="dns-prefetch" href="https://www.google.co.jp" />
         </Head>
         <body>
