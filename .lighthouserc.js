@@ -2,16 +2,14 @@ module.exports = {
   ci: {
     collect: {
       numberOfRuns: 1,
-      staticDistDir: "./out",
-      url: [
-        "/"
-      ]
+      staticDistDir: './out',
+      url: ['/'],
     },
-    "assert": {
-      "preset": "lighthouse:no-pwa",
+    assert: {
+      preset: 'lighthouse:no-pwa',
     },
-    "upload": {
-      "target": "temporary-public-storage"
-    }
-  }
+    upload: {
+      target: 'temporary-public-storage',
+    },
+  },
 }

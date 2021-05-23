@@ -4,7 +4,7 @@ import { Container } from '../../src/components/container'
 
 describe('Container', () => {
   it('matches snapshot', () => {
-    const { asFragment } = render(<Container >contents</Container>, {})
+    const { asFragment } = render(<Container>contents</Container>, {})
     expect(asFragment()).toMatchSnapshot()
   })
 })
