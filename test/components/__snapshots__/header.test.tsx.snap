@@ -10,6 +10,7 @@ exports[`Header matches snapshot 1`] = `
     >
       <a
         class="flex title-font font-medium items-center mb-4 md:mb-0"
+        href="/"
       >
         <span
           class="text-xl text-white"
