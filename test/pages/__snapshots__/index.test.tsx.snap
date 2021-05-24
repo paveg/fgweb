@@ -85,7 +85,7 @@ exports[`Home page matches snapshot 1`] = `
       >
         <a
           aria-label="Go to Instagram profile page."
-          class="hover:bg-gray-200 text-gray-900 px-4 py-2 text-xs disabled:opacity-60 m-1 rounded-md transition duration-500 ease select-none focus:outline-none focus:shadow-outline"
+          class="hover:bg-gray-200 text-gray-900 px-4 py-2 text-xs m-1 rounded-md transition duration-500 select-none focus:outline-none focus:shadow-outline"
           href="https://www.instagram.com/_pavlog/"
           rel="noreferrer noopener"
           target="_blank"
@@ -103,7 +103,7 @@ exports[`Home page matches snapshot 1`] = `
         </a>
         <a
           aria-label="Go to Twitter profile page."
-          class="hover:bg-gray-200 text-gray-900 px-4 py-2 text-xs disabled:opacity-60 m-1 rounded-md transition duration-500 ease select-none focus:outline-none focus:shadow-outline"
+          class="hover:bg-gray-200 text-gray-900 px-4 py-2 text-xs m-1 rounded-md transition duration-500 select-none focus:outline-none focus:shadow-outline"
           href="https://twitter.com/paveg_"
           rel="noreferrer noopener"
           target="_blank"
