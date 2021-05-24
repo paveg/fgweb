@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from '../../testUtils'
-import { Button } from '../../../src/components/parts/button'
+import { Button } from '../../../src/components/parts/buttons/button'
 
 describe('Button', () => {
   it('matches snapshot primary', () => {

@@ -8,7 +8,7 @@ export const Header: React.VFC = (): JSX.Element => {
           className="flex title-font font-medium items-center mb-4 md:mb-0"
           href={'/'}
         >
-          <span className="text-xl text-white">Funai Gaming</span>
+          <span className="text-xl text-white">Funai Gaming Web</span>
         </a>
         <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
           <Link href="/">
