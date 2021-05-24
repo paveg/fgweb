@@ -1,6 +1,7 @@
 import React from 'react'
 import { Layout } from '../components/layout'
-import { InlineLink } from '../components/parts/inlineLink'
+import TwitterIcon from '@material-ui/icons/Twitter'
+import { IconButton } from '../components/parts/buttons/iconButton'
 
 type Member = {
   nickname: string
@@ -12,6 +13,10 @@ const members: Member[] = [
     nickname: 'funai',
     twitterURL: 'https://twitter.com/paveg_',
   },
+  {
+    nickname: 'example',
+    twitterURL: 'https://twitter.com/example',
+  },
 ]
 
 export const Parts: React.FC = (): JSX.Element => (
@@ -19,7 +24,7 @@ export const Parts: React.FC = (): JSX.Element => (
     <div className="w-full text-center mx-auto">
       <table className="rounded-t-lg m-5 w-5/6 mx-auto bg-gray-900 text-gray-200">
         <thead>
-          <tr className="text-left border-b border-gray-300">
+          <tr className="text-center border-b border-gray-300">
             <th className="px-4 py-3">Name</th>
             <th className="px-4 py-3">SNS</th>
           </tr>
@@ -29,13 +34,19 @@ export const Parts: React.FC = (): JSX.Element => (
             return (
               <tr
                 key={member.nickname}
-                className="bg-gray-700 border-b border-gray-700"
+                className="bg-white text-gray-900 border border-gray-700"
               >
                 <td className="px-4 py-3">{member.nickname}</td>
                 <td className="px-4 py-3">
-                  <InlineLink href={member.twitterURL} target="_blank">
-                    Twitter
-                  </InlineLink>
+                  <IconButton
+                    small
+                    label="Go to Twitter profile page."
+                    apperance="tertiary"
+                    IconComponent={TwitterIcon}
+                    href={member.twitterURL}
+                    disabled={member.nickname === 'example'}
+                    target="_blank"
+                  />
                 </td>
               </tr>
             )

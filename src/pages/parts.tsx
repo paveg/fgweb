@@ -1,6 +1,6 @@
 import React from 'react'
 import { Layout } from '../components/layout'
-import { Button } from '../components/parts/button'
+import { Button } from '../components/parts/buttons/button'
 
 export const Parts: React.FC = (): JSX.Element => (
   <Layout pageTitle="Parts">

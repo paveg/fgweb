@@ -23,6 +23,8 @@
     "*.{ts,tsx,js}": "npm run lint:fix -- --cache"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "4.11.2",
     "next": "latest",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
@@ -36,8 +38,9 @@
     "@storybook/react": "^6.2.9",
     "@testing-library/react": "^11.2.5",
     "@types/jest": "^26.0.20",
+    "@types/material-ui": "^0.21.8",
     "@types/node": "^14.14.25",
-    "@types/react": "^17.0.1",
+    "@types/react": "^17.0.6",
     "@typescript-eslint/eslint-plugin": "^4.14.2",
     "@typescript-eslint/parser": "^4.14.2",
     "autoprefixer": "^10.2.5",

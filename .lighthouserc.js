@@ -7,6 +7,9 @@ module.exports = {
     },
     assert: {
       preset: 'lighthouse:no-pwa',
+      assertions: {
+        'non-composited-animations': 'off',
+      },
     },
     upload: {
       target: 'temporary-public-storage',

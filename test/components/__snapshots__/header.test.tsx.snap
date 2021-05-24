@@ -15,7 +15,7 @@ exports[`Header matches snapshot 1`] = `
         <span
           class="text-xl text-white"
         >
-          Funai Gaming
+          Funai Gaming Web
         </span>
       </a>
       <nav
