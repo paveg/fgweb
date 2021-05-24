@@ -61,6 +61,7 @@ export const IconButton: React.FC<IconButtonProps> = ({
 
   if (href) {
     return (
+      // TODO: implements disabled style.
       <Link href={href}>
         <a
           href={href}
@@ -75,6 +76,7 @@ export const IconButton: React.FC<IconButtonProps> = ({
           }}
           ref={ref as React.Ref<HTMLAnchorElement>}
           aria-label={label}
+          aria-disabled={disabled && true}
           className={`${color} ${sizeClass} disabled:opacity-60 m-1 rounded-md transition duration-500 ease select-none focus:outline-none focus:shadow-outline`}
         >
           <IconComponent />

@@ -13,6 +13,10 @@ const members: Member[] = [
     nickname: 'funai',
     twitterURL: 'https://twitter.com/paveg_',
   },
+  {
+    nickname: 'example',
+    twitterURL: 'https://twitter.com/example',
+  },
 ]
 
 export const Parts: React.FC = (): JSX.Element => (
@@ -30,7 +34,7 @@ export const Parts: React.FC = (): JSX.Element => (
             return (
               <tr
                 key={member.nickname}
-                className="bg-white text-gray-900 border-b border-gray-700"
+                className="bg-white text-gray-900 border border-gray-700"
               >
                 <td className="px-4 py-3">{member.nickname}</td>
                 <td className="px-4 py-3">
@@ -39,7 +43,8 @@ export const Parts: React.FC = (): JSX.Element => (
                     label="Go to Twitter profile page."
                     apperance="tertiary"
                     IconComponent={TwitterIcon}
-                    href="https://twitter.com/paveg_"
+                    href={member.twitterURL}
+                    disabled={member.nickname === 'example'}
                     target="_blank"
                   />
                 </td>
