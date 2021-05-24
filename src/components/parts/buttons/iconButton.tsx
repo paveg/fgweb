@@ -78,10 +78,10 @@ export const IconButton: React.FC<IconButtonProps> = ({
           aria-label={label}
           aria-disabled={disabled && true}
           className={`${color} ${sizeClass} m-1 rounded-md transition duration-500 select-none focus:outline-none focus:shadow-outline ${
-            !!disabled ? 'opacity-60 pointer-events-none' : 'cursor-pointer'
+            disabled ? 'opacity-60 pointer-events-none' : 'cursor-pointer'
           }`}
         >
-          <IconComponent/>
+          <IconComponent />
           {iconOnly ? null : children}
         </a>
       </Link>
