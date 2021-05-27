@@ -1,4 +1,3 @@
-import * as React from 'react'
 import Link from 'next/link'
 
 export type IconButtonProps = {
@@ -82,7 +81,7 @@ export const IconButton: React.FC<IconButtonProps> = ({
           }`}
         >
           <IconComponent />
-          {iconOnly ? null : children}
+          {iconOnly ? null : <span className="ml-1">{children}</span>}
         </a>
       </Link>
     )
@@ -98,7 +97,7 @@ export const IconButton: React.FC<IconButtonProps> = ({
         className={`${color} ${sizeClass} disabled:opacity-60 m-1 rounded-md transition duration-500 ease select-none focus:outline-none focus:shadow-outline`}
       >
         <IconComponent />
-        {iconOnly ? null : children}
+        {iconOnly ? null : <span className="ml-1">{children}</span>}
       </button>
     )
   }
